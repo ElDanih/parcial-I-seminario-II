@@ -1,0 +1,235 @@
+ 
+  /*Carrosel*/
+  .search {
+    height: 100px;
+    margin-left: 10px;
+  }
+  
+  .search__title {
+    color: black;
+    font-size: 25px;
+  }
+  
+  .search__title--input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid black;
+    border-radius: 25px;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    outline: none;
+    width: 70%;
+  }
+  
+  .input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+  }
+  
+  .input::placeholder {
+    color: black;
+  }
+  
+  .carousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+  }
+  
+  .carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+  }
+  
+  .carousel__item {
+    background-color: gray;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+  }
+  
+  .carousel__item:hover ~ .carousel__item {
+    transform: translate3d(100px, 0, 0);
+  }
+
+  .carousel-item__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+  
+  .carousel__container:hover .carousel__item {
+    opacity: 0.3;
+  }
+  
+  .carousel__container:hover .carousel__item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  
+  .login {
+    background: linear-gradient(#21c08b, #AB88FF);
+    display: flex;
+    align-items: center;  /*Alinear de forma vertical */
+    justify-content: center;  /*Alinear de forma Horizontal*/
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+  }
+  
+  .login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  
+  .login__container--form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login__container--form label {
+    font-size: 14px;
+  }
+  
+  .login_container--remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .login_container--remember-me a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .login_container--remember-me a:hover {
+    text-decoration: underline;
+  }
+  
+  /* .login__container--social-media img{
+      width: 40px;
+      margin-right: 10px;
+  } */
+  .login__container--social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .login__container--social-media > div > img {
+    width: 35px;
+    margin-right: 10px;
+  }
+  
+  .login__container--register {
+    font-size: 14px;
+  }
+  
+  .login__container--register a {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .login__container--register a:hover {
+    text-decoration: underline;
+  }
+  
+  /*.input{
+      background-color: transparent;
+      border-left: 0px;
+      border-top: 0px;
+      border-right: 0px;
+      border-bottom: 2px solid white;
+      font-size: 16px;
+      font-family: 'Open Sans', sans-serif;
+      margin-bottom: 20px;
+      padding: 0px 20px;
+      outline: none;
+      height: 50px;
+  }*/
+  ::placeholder {
+    color: white;
+  }
+  
+  .button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .login__container {
+      background-color: transparent;
+      border: none;
+      padding: 0px;
+      width: 100%;
+    }
+  
+    .footer {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+  
+  /*# sourceMappingURL=styles.css.map */
+  
